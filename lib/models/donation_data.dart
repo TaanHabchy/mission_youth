@@ -20,8 +20,6 @@ class DonationData {
   }
 
   String toJson() {
-    print('donation is: $donation');
-    print('min is: $min and the max is $max');
     final id = const Uuid().v8();
     final data = {
       'id': id,

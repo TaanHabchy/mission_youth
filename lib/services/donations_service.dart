@@ -3,12 +3,12 @@ import 'package:flutter_application_1/models/donation_data.dart';
 import 'package:flutter_application_1/models/donation_list.dart';
 import 'package:http/http.dart' as http;
 
-//Swagger: https://api.restpoint.io/doc-runs?projectId=75fee493-c544-43e5-acd2-a73266b24025&docId=SwaggerUI&x-api-key=0fb67a538e564c5d810e414ee88c156c&pathId=05aa7b69-4f73-4257-a839-7d5028fdbc70#/donations/post-donations
-//JSON:
+//Swagger: https://api.restpoint.io/doc-runs?docId=SwaggerUI&x-endpoint-key=69d536246db54bf49ed09457edcf1e5d
+//JSON:    https://api.restpoint.io/api/donations?docId=SwaggerUI&x-endpoint-key=69d536246db54bf49ed09457edcf1e5d
 
 class DonationService {
   final urlString = 'https://api.restpoint.io/api/donations';
-  final endpointKey = '69d536246db54bf49ed09457edcf1e5d';
+  final endpointKey = '9d159a23e43b4992bd17a0186f43ac62';
   final headerKey = 'x-endpoint-key';
 
   Future<void> insertDonation(String donation, String min, String max) async {

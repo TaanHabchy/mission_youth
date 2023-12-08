@@ -28,6 +28,28 @@ class DoneDonation extends StatelessWidget {
       onPressed: () {
         if (donation != "" && min != "" && max != "") {
           service.insertDonation(donation, min, max);
+        } else if (int.parse(min) > int.parse(max)) {
+          showDialog<void>(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  backgroundColor: Colors.black,
+                  title: Text(
+                    'Minimum cannot be greater than the maximum)',
+                    style: myStyle,
+                  ),
+                  actions: [
+                    TextButton(
+                        child: Text(
+                          'Close',
+                          style: myStyle,
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        }),
+                  ],
+                );
+              });
         } else {
           showDialog<void>(
               context: context,

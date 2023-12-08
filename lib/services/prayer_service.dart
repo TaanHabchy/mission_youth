@@ -5,8 +5,8 @@ import 'package:flutter_application_1/models/prayer_data.dart';
 import 'package:flutter_application_1/models/prayer_list.dart';
 import 'package:http/http.dart' as http;
 
-//Swagger: https://api.restpoint.io/doc-runs?docId=SwaggerUI&x-endpoint-key=b20cf86d62b1491a8fc3b610a7459074#/
-//JSON: https://api.restpoint.io/api/prayers?docId=SwaggerUI&x-endpoint-key=b20cf86d62b1491a8fc3b610a7459074
+//Swagger: https://api.restpoint.io/doc-runs?docId=SwaggerUI&x-endpoint-key=b20cf86d62b1491a8fc3b610a7459074
+//JSON:    https://api.restpoint.io/api/prayers?docId=SwaggerUI&x-endpoint-key=b20cf86d62b1491a8fc3b610a7459074
 
 class PrayerService {
   final urlString = 'https://api.restpoint.io/api/prayers';

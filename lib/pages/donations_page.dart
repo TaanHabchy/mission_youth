@@ -33,7 +33,7 @@ class DonationsPageState extends State<DonationsPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("${list.length} Donations"),
+        title: const Text("Donations"),
       ),
       backgroundColor: regnumBrown,
       body: ListView.builder(

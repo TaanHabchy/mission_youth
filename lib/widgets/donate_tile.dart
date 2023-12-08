@@ -18,7 +18,6 @@ class _DonateTileState extends State<DonateTile> {
   @override
   void initState() {
     super.initState();
-    // TODO: implement initState
     supplied = Text(
         'Tap to supply ${widget.donationData.min} - ${widget.donationData.max} items',
         style: myStyle);
